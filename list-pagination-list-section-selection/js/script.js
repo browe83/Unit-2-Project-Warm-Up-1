@@ -47,20 +47,22 @@ function sectionSelection(list, section) {
   
   // 1b. Loop over the list parameter and set the style.color of each list item to 'whitesmoke'
   
-  for (let i = 0; i < list.length; i++) {
-    console.log(i)
-    list[i].style.color = 'whitesmoke';
-  }
-  // 1c. Loop over the list parameter again
-      // Add a conditional inside the loop
-      // If the current loop index is >= the `startIndex` variable && the current loop index <= the `endIndex` variable
-      // Set the style.color of the the list item to 'green', or your favorite color
-  for (i in list) {
-    if (list[i] >= startIndex && list[i] <= endIndex) {
-        list[i].style.color = 'green';
+    for (let i = 0; i < list.length; i++) {
+      list[i].color.style = 'whitesmoke';
     }
-  }
+
+    
+    // 1c. Loop over the list parameter again
+        // Add a conditional inside the loop
+        // If the current loop index is >= the `startIndex` variable && the current loop index <= the `endIndex` variable
+        // Set the style.color of the the list item to 'green', or your favorite color
+    for (let i in list) {
+      if ( i >= startIndex && i <= endIndex) {
+            list[i].style.color = 'green';
+        }
+      }
 }
+
 btn1.addEventListener('click', () => {
 
   // Invoke your sectionSelection function here - Arguments: listItems, 1
