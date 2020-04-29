@@ -48,7 +48,7 @@ function sectionSelection(list, section) {
   // 1b. Loop over the list parameter and set the style.color of each list item to 'whitesmoke'
   
     for (let i = 0; i < list.length; i++) {
-      list[i].color.style = 'whitesmoke';
+      list[i].style.color = 'whitesmoke';
     }
 
     
